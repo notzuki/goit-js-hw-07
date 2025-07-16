@@ -25,7 +25,7 @@ const images = [
   }
 ];
 
-const galleryEl = document.querySelector('.gallery');
+const fullGallery = document.querySelector('.gallery');
 
 const galleryElItems = images
   .map(
@@ -33,8 +33,8 @@ const galleryElItems = images
   <li class="gallery-item">
     <img class="gallery-image" src="${image.url}" alt="${image.alt}" width="360">
   </li>
-`
+  `
   )
   .join('');
 
-galleryEl.insertAdjacentHTML('beforeend', galleryElItems);
+fullGallery.insertAdjacentHTML('beforeend', galleryElItems);
